@@ -111,6 +111,31 @@ h1 { font-size: 24px; color: #111; line-height: 1.5; font-weight: 800; }
 }
 .FloatingCartBar.active-cart .cart-badge { background: #ffffff; color: #2d6a4f; }
 .FloatingCartBar .cart-price { font-size: 14px; font-weight: bold; }
+/* ── الهواتف: تخطيط مصغّر — الصورة يميناً والنصوص يساراً ── */
+@media (max-width: 640px) {
+  .wrap { padding: 10px; }
+  .breadcrumb { margin: 6px 0 12px; font-size: 12px; }
+  .card { flex-wrap: nowrap; align-items: flex-start; }
+  .card-img { flex: 0 0 40%; min-height: 0; align-items: flex-start; padding: 8px; }
+  .card-img img { width: 100%; height: auto; }
+  .card-body { flex: 1 1 auto; padding: 12px; gap: 9px; }
+  h1 { font-size: 15px; line-height: 1.5; }
+  .desc { font-size: 12px; line-height: 1.7; }
+  .badges { gap: 5px; }
+  .badge { font-size: 10px; padding: 3px 8px; }
+  .includes { gap: 6px; }
+  .includes li { font-size: 11.5px; padding: 7px 10px 7px 24px; line-height: 1.6; }
+  .includes li::before { right: 8px; top: 7px; font-size: 11px; }
+  .price { font-size: 19px; }
+  .price small { font-size: 12px; }
+  .OrderNowButton { padding: 11px 14px; font-size: 14px; }
+  .section { padding: 15px; margin-top: 12px; }
+  .section h2 { font-size: 16px; margin-bottom: 8px; }
+  .section p { font-size: 13px; line-height: 1.9; }
+  .details-list { margin-top: 10px; }
+  .details-list li { font-size: 12.5px; padding: 8px 12px 8px 28px; }
+  .details-list li::before { right: 10px; top: 8px; }
+}
 </style>
 </head>
 <body>
